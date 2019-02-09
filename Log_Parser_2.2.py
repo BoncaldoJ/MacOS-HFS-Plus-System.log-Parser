@@ -24,7 +24,7 @@ Time = re.compile(r"\d{2}:\d{2}:\d{2}")
 Process = re.compile(r'\w+\[.{1,5}]')
 Message = re.compile(r': \w+.*$')
 
-print("Parsing...")
+print("Parsing log file...")
 for b in blines:
     matchTime = Time.search(b)
     matchDate = Date.search(b)
